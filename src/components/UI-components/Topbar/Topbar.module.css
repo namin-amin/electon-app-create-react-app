@@ -1,0 +1,47 @@
+.container{
+    height: 20px;
+    width: 10%;
+    background-color: aqua;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.close{
+    width: 50%;
+    height: 20px;
+    background-color:white; 
+    outline: none;
+    color: white;
+    border: solid 1px rgb(255, 72, 0) ;
+    color: rgb(255, 72, 0);
+    margin: 0;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: all 0.3s ease-in-out;
+}
+.minimize{
+    width: 50%;
+    height: 20px;
+    background-color: white; 
+    color: rgb(255, 136, 0);
+    border: solid 1px rgb(255, 136, 0);
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.close:hover{
+    background-color: rgb(255, 72, 0);
+    color: white; 
+}
+
+.minimize:hover{
+    background-color: rgb(255, 136, 0);
+    color: white; 
+}
