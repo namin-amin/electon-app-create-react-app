@@ -12,13 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-button{
-  -webkit-app-region: no-drag;
-}
-a{
-  -webkit-app-region: no-drag;
-}
-p{
-  -webkit-app-region: no-drag;
-}
