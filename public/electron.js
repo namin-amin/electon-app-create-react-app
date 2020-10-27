@@ -1,7 +1,7 @@
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
-const ipcMain = electron.ipcMain;
+
 
 const path = require('path');
 const isDev = require('electron-is-dev');
@@ -31,14 +31,3 @@ app.on('activate', () => {
     createWindow();
   }
 });
-
-
-//my code starts
-ipcMain.on('off', (event, arg) => {
-  console.log(arg)
-  app.quit()
-})
-
-ipcMain.on('minimize', (event, arg) => {
-  BrowserWindow.getFocusedWindow().minimize()
-})

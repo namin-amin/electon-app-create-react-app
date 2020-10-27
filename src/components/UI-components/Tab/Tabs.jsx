@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom'
 function Tabs() {
     return (
         <div>
-            <Link to="/"><p> active tasks</p></Link>
-            <Link to="/calender"><p>calender</p></Link>
-            <Link to="/archived"><p>archived</p></Link>
+            <Link to="/"><p> multiply 2 numbers</p></Link>
+            <Link to="/add"><p>add 2 numbers</p></Link>
+            <Link to="/devide"><p>devide 2 numbers</p></Link>
         </div>
     )
 }
