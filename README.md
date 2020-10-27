@@ -1,4 +1,4 @@
-This app is a template electron app bootstraped in create-react-app
+This app is a template  for an electron app bootstraped in create-react-app
 
 yarn start : to start the App
 
