@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import classes from '../Multiply/Multiply.module.css'
 
 function Devide() {
 
@@ -6,13 +7,22 @@ function Devide() {
   const [num1 , setnum1] = useState(0)
   const [num2 , setnum2] = useState(0)
 
+
+  const division = ()=>{
+    if (Number(num2) === 0){
+      setanswer("can not devide by 0")
+    }else{
+      setanswer(Number(num1)/Number(num2))
+    }
+  }
+
     return (
-        <div>
+        <div className={classes.contain}>
         <h3>this page devides numbers</h3>
-          <p>{answer}</p>
-          <input type="text" onChange={(eve)=>setnum1(eve.target.value)} value={num1}/>
-          <input type="text" onChange={(eve)=>setnum2(eve.target.value)} value={num2}/>
-          <button onClick={()=>setanswer(Number(num1)/Number(num2))}>devide / </button>
+          <h2 className={classes.answer}>{answer}</h2>
+          <input type="text" className={classes.inputs}  onChange={(eve)=>setnum1(eve.target.value)} value={num1}/>
+          <input type="text" className={classes.inputs}  onChange={(eve)=>setnum2(eve.target.value)} value={num2}/>
+          <button className={classes.btn}  onClick={division} > / </button>
         </div>
     )
 }

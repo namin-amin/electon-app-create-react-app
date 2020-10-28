@@ -1,14 +1,27 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
+import classes from './Tabs.module.css'
 
 function Tabs() {
-    return (
-        <div>
-            <Link to="/"><p> multiply 2 numbers</p></Link>
-            <Link to="/add"><p>add 2 numbers</p></Link>
-            <Link to="/devide"><p>devide 2 numbers</p></Link>
-        </div>
-    )
+  return (<div className={classes.contain}>
+
+    <NavLink className={classes.tabs} to="/" activeStyle={{
+        borderBottom: "solid 1px blue"
+      }} exact="exact">
+      <p>
+        multiply 2 numbers</p>
+    </NavLink>
+    <NavLink className={classes.tabs} to="/add" activeStyle={{
+        borderBottom: "solid 1px blue"
+      }}>
+      <p>add 2 numbers</p>
+    </NavLink>
+    <NavLink className={classes.tabs} to="/devide" activeStyle={{
+        borderBottom: "solid 1px blue"
+      }}>
+      <p>devide 2 numbers</p>
+    </NavLink>
+  </div>)
 }
 
 export default Tabs

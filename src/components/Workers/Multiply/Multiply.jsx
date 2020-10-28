@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import classes from './Multiply.module.css'
 
 function Multiply() {
 
@@ -7,12 +8,12 @@ function Multiply() {
   const [num2 , setnum2] = useState(0)
 
     return (
-        <div>
+        <div className={classes.contain}>
           <h3>this page Multiplies numbers</h3>
-          <p>{answer}</p>
-        <input type="text" onChange={(eve)=>setnum1(eve.target.value)} value={num1}/>
-        <input type="text" onChange={(eve)=>setnum2(eve.target.value)} value={num2}/>
-        <button onClick={()=>setanswer(Number(num1)*Number(num2))}>Multiply x</button>
+          <h2 className={classes.answer}>{answer}</h2>
+        <input type="text" className={classes.inputs} onChange={(eve)=>setnum1(eve.target.value)} value={num1}/>
+        <input type="text" className={classes.inputs}  onChange={(eve)=>setnum2(eve.target.value)} value={num2}/>
+        <button className={classes.btn} onClick={()=>setanswer(Number(num1)*Number(num2))}>Multiply x</button>
         </div>
     )
 }
