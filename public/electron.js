@@ -14,6 +14,7 @@ function createWindow() {
     enableRemoteModule: true
 }});
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
+  mainWindow.removeMenu();
   mainWindow.on('closed', () => mainWindow = null);
 }
 
