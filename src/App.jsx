@@ -1,6 +1,6 @@
 import React from "react";
 import { Tabs,Tab } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './bootstrap.min.css';
 import Add from "./components/Workers/Add/Add";
 import Multiply from "./components/Workers/Multiply/Multiply";
 import Devide from "./components/Workers/Devide/Devide";
