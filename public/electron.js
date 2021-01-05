@@ -15,7 +15,7 @@ function createWindow() {
 }});
 
   splashWin = new BrowserWindow({width:600,height:250,hasShadow:true,alwaysOnTop:true,show:false,frame:false})
-  splashWin.loadFile(__dirname+'/splash.html')
+  splashWin.loadFile(__dirname+'/static/splash.html')
   splashWin.on('ready-to-show',()=>splashWin.show())
 
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
